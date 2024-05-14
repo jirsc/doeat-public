@@ -1,5 +1,5 @@
 import 'package:doeat/modules/modules.dart';
-import 'package:doeat/widgets/widgets.dart';
+import 'package:doeat/widgets/widgets.dart' as widgets;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doeat/utils/utils.dart';
@@ -48,7 +48,7 @@ class _SearchScreenState extends State<SearchScreen> {
             children: [
               BlocBuilder<SearchVendorBloc, SearchVendorState>(
                 builder: (context, state) {
-                  return SearchBar(
+                  return widgets.SearchBar(
                       controller: textEditingController,
                       onChanged: (value) {
                         setState(() {

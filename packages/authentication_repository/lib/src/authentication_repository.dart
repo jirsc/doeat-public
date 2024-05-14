@@ -284,8 +284,6 @@ class AuthenticationRepository {
   final FacebookAuth _facebookAuth;
   final FirebaseFirestore db;
 
-  final String _userPIN = '';
-
   /// Whether or not the current environment is web
   /// Should only be overriden for testing purposes. Otherwise,
   /// defaults to [kIsWeb]
